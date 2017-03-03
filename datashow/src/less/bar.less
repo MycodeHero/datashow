@@ -1,0 +1,62 @@
+.componentBar{
+    .itemWrapper{
+        width : 100%;
+        height: 15px;
+        margin:10px 0;
+        text-align:center;
+        line-height:15px;
+        .text{
+            height : 15px;
+            margin-right:10px;
+            float:left;
+        }
+        .wrapperInner{
+            height:15px;
+            margin-right:10px;
+            float:left;
+            .progressBar{
+                height:15px;
+                width:0%;
+                opacity:0;
+                border-radius:10px;
+                transition : all 1s ease-in-out;
+            }   
+        } 
+        .percent{
+            float:left;
+            opacity :0;
+            margin-left:-20px;
+            transition: all 1s ease-in-out 1s;
+        }
+    }
+}
+
+.load{
+    .itemWrapper{
+        .wrapperInner{
+            .progressBar{
+                width:100%;
+                opacity:1;
+            }   
+        } 
+        .percent{
+            opacity:1;
+            margin-left:0px;
+        }
+    }
+}
+
+.leave{
+    .itemWrapper{
+        .wrapperInner{
+            .progressBar{
+                width:0%;
+                opacity:0;
+            }   
+        }
+        .percent{
+            opacity:0;
+            margin-left:-20px
+        }
+    }
+}

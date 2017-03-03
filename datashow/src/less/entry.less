@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.section{
+    position:relative;
+    background-image:url('../../src/img/common/5.png');
+}
+.section:first-child{
+	background-image:url('../../src/img/groupOne/background.png')
+}
+@keyframes shake{
+	0% {
+		transform : rotateZ(-2deg)
+	}
+	10% {
+		transform : rotateZ(4deg)
+	}
+	20% {
+		transform : rotateZ(-4deg)
+	}
+	30% {
+		transform : rotateZ(2deg)
+	}
+	40% {
+		transform : rotateZ(0deg)
+	}
+	50% {
+		transform : rotateZ(-2deg)
+	}
+	60% {
+		transform : rotateZ(4deg)
+	}
+	70% {
+		transform : rotateZ(-4deg)
+	}
+	80% {
+		transform : rotateZ(2deg)
+	}
+	90% {
+		transform : rotateZ(0deg)
+	}
+	100% {
+		transform : rotateZ(-2deg)
+	}
+}
+
+.shake{
+	animation : shake 3s ease-in infinite;
+}
+
+@keyframes jump {
+	0% {
+		transform : translateY(-50px)
+	}
+	50% {
+		transform : translateY(50px)
+	}
+	100% {
+		transform : translateY(-50px)
+	}
+}
+
+.jump{
+	animation : jump 2s ease-in infinite;
+}
